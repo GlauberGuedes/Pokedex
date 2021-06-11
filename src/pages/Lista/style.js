@@ -26,8 +26,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 84,
     padding: '0 30px 0 30px',
     display: 'flex',
+    justifyContent: 'center',
     flexWrap: 'wrap',
-    gap: 30
+    gap: 40
   },
 }));
 

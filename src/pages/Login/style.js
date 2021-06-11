@@ -7,6 +7,10 @@ const useStyles = makeStyles((theme) => ({
     minHeight: '100vh',
     gap: 15
   },
+  carregar: {
+    display: 'block',
+    margin: '0 auto 0 auto',
+  },
 }));
 
 export default useStyles;

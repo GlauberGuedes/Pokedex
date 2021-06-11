@@ -48,6 +48,7 @@ export default function Lista() {
       });
 
       const data = await resposta.json();
+      
       setPokemons(data);
     }catch(error) {
       console.log(error);

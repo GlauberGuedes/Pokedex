@@ -87,7 +87,7 @@ export default function Login() {
             }
           />
         </FormControl>
-        {carregando && <CircularProgress />}
+        {carregando && <CircularProgress className={classes.carregar}/>}
         <Button variant="contained" color="primary" type="submit">Entrar</Button>
         <Typography variant="body2">Não possui cadastro? <Link to="/cadastro">Cadastrar</Link></Typography>
         {erro && <Alert severity="error">{erro}</Alert>}  

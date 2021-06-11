@@ -25,7 +25,7 @@ export default function ModalForm(props) {
 
 
   async function onSubmit (data) {
-    console.log(data);
+    
     try {
       const resposta = await fetch(`https://pokeapi.co/api/v2/pokemon/${data.nome}`);
       
@@ -54,8 +54,7 @@ export default function ModalForm(props) {
       });
 
       const dados = await respostaMinhaApi.json();
-
-      if(!dados.ok) {
+      if(!respostaMinhaApi.ok) {
         console.log(dados)
       }
 

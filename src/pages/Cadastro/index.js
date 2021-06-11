@@ -47,6 +47,8 @@ export default function Cadastro() {
 
     const dados = await resposta.json();
 
+    console.log(dados);
+
     setCarregando(false);
     if(!resposta.ok) {
       setErro(dados);
@@ -82,7 +84,7 @@ export default function Cadastro() {
             }
           />
         </FormControl>
-        {carregando && <CircularProgress />}
+        {carregando && <CircularProgress className={classes.carregar}/>}
         <Button variant="contained" color="primary" type="submit">Cadastrar</Button>
         <Typography variant="body2">Já é cadastrado? <Link to="/">Login</Link></Typography>
         {erro && <Alert severity="error">{erro}</Alert>}    

@@ -37,7 +37,7 @@ export default function ModalForm(props) {
 
       const dados = await respostaMinhaApi.json();
 
-      if(!dados.ok) {
+      if(!respostaMinhaApi.ok) {
         console.log(dados)
       }
 
